@@ -42,7 +42,7 @@ def main(app, args):
     ########################################################
     # Transfering picture to computer
     t = paramiko.Transport(args.ip, args.port)
-    t.connect(username="nao", password="edutech123")
+    t.connect(username=**username**, password=**password**)
     sftp = paramiko.SFTPClient.from_transport(t)
     files = sftp.listdir(PepperPath)
     # print("Files on Pepper in folder " + PepperPath + ": ")
